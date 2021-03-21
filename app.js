@@ -28,7 +28,7 @@ if (favouriteChamp=='garen'){
 } else if(favouriteChamp=='caitlyn'){
     image ='<img src="Caitlyn_0.jpg"/>';
 } else if(favouriteChamp=='jinx'){
-    image ='<img src="/Jinx_0.jpg"/>';
+    image ='<img src="Jinx_0.jpg"/>';
 } 
 
 for (var i = 0; i<numberOfImages; i++){
