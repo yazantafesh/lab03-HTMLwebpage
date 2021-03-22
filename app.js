@@ -1,5 +1,11 @@
 var age=prompt("How old are you?");
 
+
+
+function getAge(userAge) {
+
+
+
 if(age >= 13 && age <= 30){
     alert('Welcome!');
 }else if(age < 13 || age > 30 ) {
@@ -7,13 +13,29 @@ if(age >= 13 && age <= 30){
 } else {
     alert('Please input a number');
 }
+}
+
+getAge(age);
+
+
+
+
+
+
+
 
 var favouriteChamp= prompt("Who's your favourite champion?");
 
+
+var getFavChamp = function () {
+
 while (favouriteChamp !=='garen' && favouriteChamp !=='caitlyn' && favouriteChamp !=='jinx'){
-favouriteChamp = prompt('Please choose between garen, caitlyn and jinx');
+    favouriteChamp = prompt('Please choose between garen, caitlyn and jinx');
 
 }
+
+
+
 
 var numberOfImages = prompt('How many of them do you want to see?');
 
@@ -31,18 +53,27 @@ if (favouriteChamp=='garen'){
     image ='<img src="Jinx_0.jpg"/>';
 } 
 
+
+
 for (var i = 0; i<numberOfImages; i++){
     result += image;
 }
 
+document.write(result)
 
-document.write(result);
+return result
+
+
+}
+
+
+getFavChamp()
 
 confirm("Press the button if you are not a robot :P");
 
 
-function changeBackground(color) {
-    document.body.style.background = color;
- }
+// function changeBackground(color) {
+//     document.body.style.background = color;
+//  }
  
- window.addEventListener("load",function() { changeBackground('red') });
+//  window.addEventListener("load",function() { changeBackground('red') });
